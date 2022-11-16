@@ -24,11 +24,11 @@ def make_matrix_orient(data, min_orientation):
 
     count = find_count(data)
     matrix = np.zeros([count, count])
-    i = 0
     j = 1000000000000000000
     columns = data
 
-    for x1 in data:
+    for i, x1 in enumerate(data):
+        i = i - 1
         columns_x = copy.deepcopy(columns).flatten()
         columns_x[i] = j
 
@@ -40,6 +40,5 @@ def make_matrix_orient(data, min_orientation):
         min_indexs = min_indexs.astype("int")
         matrix[min_indexs, i] = min_vals
         matrix[i, min_indexs] = min_vals
-        i += 1
 
     return matrix
