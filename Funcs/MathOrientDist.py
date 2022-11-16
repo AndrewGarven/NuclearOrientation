@@ -21,14 +21,6 @@ def math_orient_dist(k, x1, min_orientation, upper, lower, u_neg, l_pos, i, j):
         print('ERROR (math_orient_dist): x1 object should be of type numpy.ndarray')
     if not isinstance(min_orientation, numbers.Number):
         print('ERROR (math_orient_dist): min_orientation object should be a numeric value')
-    #if not isinstance(upper, float):
-    #    print('ERROR (math_orient_dist): upper object should be a float value')
-    #if not isinstance(lower, float):
-    #    print('ERROR (math_orient_dist): lower object should be a float value')
-    #if not isinstance(u_neg, float):
-    #    print('ERROR (math_orient_dist): u_neg object should be a float value')
-    #if not isinstance(l_pos, float):
-    #    print('ERROR (math_orient_dist): l_pos object should be a float value')
     if not isinstance(i, int):
         print('ERROR (math_orient_dist): i object should be a int value')
     if not isinstance(j, int):
